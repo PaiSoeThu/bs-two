@@ -1,0 +1,25 @@
+.hero{
+  padding-bottom: 100px;
+}
+.member{
+  margin-top: -250px;
+}
+.services .service{
+  width: 100px;
+  height: 100px;
+}
+.Free{
+  top: 30px;
+}
+:focus-visible {
+  outline: none!important;
+}
+.ft-custom:hover{
+  color:#FF2359;
+}
+@media screen and (max-width: 768px) { 
+  .email{
+    background-color:#000;
+  }
+}
+

@@ -1,0 +1,78 @@
+$primary: #000000;
+$secondary: #fff;
+$tertiary : #FCF3EC;
+$accent : #FF2359;
+$btn-color: #fff;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "accent": $accent,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+@mixin customButton($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border-radius: 50px 0px 50px 50px;
+    padding: 10px 45px;
+    text-decoration: none;
+    
+ 
+  }
+  .my-custom-button {
+    @include customButton(#fff, #000);
+    &:hover {
+        background-color: darken($accent, 10%);
+        color:#fff;
+      }
+      
+  }
+
+  .my-custom-button-2 {
+    @include customButton($accent, $secondary);
+    &:hover {
+        background-color: darken($secondary, 10%);
+        color:#000;
+      }
+  }
+
+  .my-custom-button-3 {
+    @include customButton(#FED1DC, $accent);
+    &:hover {
+        background-color: darken($accent, 10%);
+        color:#fff;
+      }
+      &:active {
+        background-color: darken($accent, 10%);
+        color:#fff;
+      }
+  }
+
+  .my-custom-button-4 {
+    @include customButton(#fff, #000);
+    &:hover {
+        background-color: darken($accent, 10%);
+        color:#fff;
+      }
+      border: 1px solid $accent;
+      
+  }
+
+ 
+
+  
+    
+
+
